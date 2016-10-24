@@ -1,0 +1,24 @@
+<!--Write function using Object Oriented Javascript
+where rabbit inherits animal class using _proto_.-. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>JSAdv-Session4-Assignment3</title>
+<script>
+	var animal = function(name) {
+		this.name = name;
+	}
+	var rabbit = function(breed) {
+		this.breed = breed;
+	}
+	var a = new animal("ANIMAL");
+	var r = new rabbit("RABBIT");
+	r.__proto__ = a;
+	alert(r.name);
+	alert(r.breed);
+</script>
+</head>
+<body>
+</body>
+</html>
